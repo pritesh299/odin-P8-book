@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store-Book</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="header"> 
+   <h1>Library</h1>
+   <button id="addBook">Add Book </button>
+</div>
+
+
+    <div class="books">
+       <div id="Card_container" > 
+          <div class="card">
+                 <h2 id="Book_tittle">Book Title</h2>
+                 <p id="author_name">Author: Author Name</p>
+                 <p id="Pages">Pages: 300</p>
+                 <p id="read_status"> Read: Yes</p>
+                 <button id="card_delete">Delete</button>
+           </div>
+       </div>
+     </div>
+
+    <div class="addBook_container">
+        <form id="addBookForm">
+          <input type="text" id="bookTitle" placeholder="Book Title" required>
+          <input type="text" id="authorName" placeholder="Author Name" required>
+          <input type="number" id="pageCount" placeholder="Page Count" required>
+          <label for="readStatus">Read:</label>
+          <input type="checkbox" id="readStatus">
+          <button type="submit">Add Book</button>
+        </form>
+      </div>
+    <script src="index.js"></script>
+</body>
+</html>

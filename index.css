@@ -1,0 +1,67 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #F8FFE5;
+}
+
+.header{
+  background-color:#1B9AAA;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.addBook_container {
+  margin: 0 auto;
+  padding: 24px;
+  width: 24vw;
+  background-color: #1B9AAA;
+  border-radius: 24px;
+}
+
+
+input[type="text"],
+input[type="number"],
+button {
+  display: block;
+  width: 23vw;
+  margin-bottom: 12px;
+  border: none;
+  padding: 6px;
+  outline: none;
+  border-radius: 6px;
+}
+
+button {
+  background-color: #06D6A0;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius:50px;
+  margin: 10px 0;
+}
+
+.card>button {
+  background-color:#EF476F;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius:50px;
+  margin: 10px 0;
+  width: 100%;
+}
+.card {
+    width: 15vw;
+    background: #FFC43D;
+    padding: 12px;
+    border-radius: 18px;
+    margin: auto;
+}
+

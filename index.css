@@ -7,7 +7,7 @@ body{
   background-color: #F8FFE5;
 }
 
-.header{
+header{
   background-color:#1B9AAA;
   height: 20vh;
   display: flex;
@@ -16,14 +16,43 @@ body{
   align-items: center;
 }
 
-.addBook_container {
-  margin: 0 auto;
-  padding: 24px;
+#addBook_container {
+  padding: 36px 24px;
   width: 24vw;
   background-color: #1B9AAA;
   border-radius: 24px;
+  position: fixed;
+  z-index: 1;
+  transition: 0.2s ease-in-out;
+  transform: translate(-50%, -50%) scale(0);
+  top: 50%;
+  left: 50%;
+
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color:  rgba(0, 0, 0, 0.5);
+}
+div#Card_container {
+   display: grid;
+   padding: 20px 10px;
+   grid-template-columns: repeat(4,1fr);
+   grid-auto-rows: 250px;
+   gap: 20px;
 }
 
+h2 {
+  margin: 20px 0;
+}
+
+p {
+    margin: 12px 0;
+}
 
 input[type="text"],
 input[type="number"],
@@ -54,14 +83,25 @@ button {
   padding: 10px;
   cursor: pointer;
   border-radius:50px;
-  margin: 10px 0;
-  width: 100%;
+  margin: 10px auto;
+  width: 90%;
 }
 .card {
     width: 15vw;
     background: #FFC43D;
-    padding: 12px;
+    padding: 20px 10px;
     border-radius: 18px;
     margin: auto;
+    /* border: 1px solid black; */
+    box-shadow: 0px 0px 5px grey;
+    max-height: 250px;
+    overflow: hidden;
 }
 
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    margin-top: 4px;
+    accent-color: white;
+    
+}
